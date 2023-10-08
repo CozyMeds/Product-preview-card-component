@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<!-- displays site properly based on user's device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Display an image in browser tab --> 
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="./static/stylesheet/styles.css">
+		<title>Frontend Mentor | Product preview card component</title>
+	</head>
+	<body>
+		<main class="container">
+			<div class="left">
+				<img class="main_img" src="./static/images/image-product-desktop.jpg">
+			</div>
+			<div class="right">
+				<h1 class="label">Perfume</h1>
+				<h2 class="title">Gabrielle Essence Eau De Parfum</h2>
+				<p class="text">
+					A floral, solar and voluptuous 
+					interpretation composed by 
+					Olivier Polge, Perfumer-Creator 
+					for the House of CHANEL.
+				</p>
+				<div class="price">
+					<h3 class="curr_price">$149.99</h3>
+					<h4 class="original_price">$169.99</h4>
+				</div>
+				<button type="button">
+					<img class="butt_img_cart" src="./static/images/icon-cart.svg" alt="shopping cart">
+					Add to Cart
+				</button>
+			</div>
+		</main>
+	</body>
 </html>
