@@ -10,6 +10,7 @@
     /* Primary */
     --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
+    --deep-aquamarine: hsl(158,42%,18%);
 
     /* Neutral */
     --very-dark-blue: hsl(212, 21%, 14%);
@@ -24,4 +25,192 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/*_*_*_* Body Styligng *_*_*_*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cream);
+}
+
+/*_*_*_* Main Container Styling *_*_*_*/
+.container {
+    display: inherit;
+    border-radius: 10px;
+
+    width: 600px;
+    height: 450px;
+
+    background-color: var(--white);
+}
+
+/*_*_*_* Main Hero Image Styling *_*_*_*/
+.main_img1 {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*_*_*_* Main Hero Image 2 Styling *_*_*_*/
+.main_img2 {
+    display: none;
+}
+
+/*_*_*_* All Right item Styling *_*_*_*/
+
+*.right {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+/*_*_*_* Right Label / Top Text Styling *_*_*_*/
+.right > .label {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+/*_*_*_* Right Main Title Styling *_*_*_*/
+.right > .title {
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+
+    line-height: 32px;
+    color: var(--very-dark-blue);
+
+    margin-bottom: 24px;
+    width: 236px;
+}
+
+/*_*_*_* Right Paragraph Styling *_*_*_*/
+.right > .text {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    color: var(--dark-grayish-blue);
+    line-height: 23px;
+
+    margin-bottom: 29px;
+    width: 237px;
+}
+
+/*_*_*_* Right Side Prices Styling *_*_*_*/
+.right > .price {
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+
+.right > .price > .curr_price {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+
+    line-height: 32px;
+    color: var(--dark-cyan);
+}
+
+.right > .price > .original_price {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 23px;
+    margin-top: 5px;
+    margin-left: 19px;
+    color: var(--dark-grayish-blue);
+
+    text-decoration: line-through;
+}
+
+/*_*_*_* Right Side Button Styling *_*_*_*/
+
+.right > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 48px;
+
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border-radius: 8px;
+    border: 0;
+}
+
+/* Right Side Button Hover Effect */
+.right > button:hover {
+    background-color: var(--deep-aquamarine);
+}
+
+.right > button > p {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right > button > .butt_img_cart {
+    width: 14.4px;
+    height: 16px;
+
+    margin-right: 11.6px;
+}
+
+/*_*_*_* Media Queries *_*_*_*/
+/*_*_*_* Mobile Phone Styling *_*_*_*/
+@media screen and (max-width: 620px){
+    .main_img1 {
+        display: none;
+    }
+
+    .main_img2 {
+        height: 100%;
+        width: 100%;
+        display: block;
+
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 343px;
+        height: 611px;
+    }
+
+    .right > .title {
+        width: 295px;
+        margin: 12px 0 0 0;
+    }
+
+    .right > .text {
+        width: 295px;
+        margin: 16px 0 0 0;
+    }
+
+    .right > button {
+        width: 295px;
+        height: 48px;
+        margin: 20px 0 0 0;
+    }
+
+    .right > .label {
+        margin: 24px 0 0 0;
+    }
+
+    .right > .price {
+        margin: 24px 0 0 0;
+    }
 }
