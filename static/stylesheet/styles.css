@@ -153,6 +153,7 @@ body {
 /* Right Side Button Hover Effect */
 .right > button:hover {
     background-color: var(--deep-aquamarine);
+    cursor: pointer;
 }
 
 .right > button > p {
